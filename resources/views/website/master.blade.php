@@ -20,7 +20,7 @@
                 <li><a href="{{route('about')}}" class="nav-link">About Us</a></li>
                 <li><a href="{{route('course')}}" class="nav-link">All Course</a></li>
                 <li><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
-                <li><a href="{{route('login')}}" class="nav-link">Login / Registration</a></li>
+                <li><a href="{{route('login-registration')}}" class="nav-link">Login / Registration</a></li>
             </ul>
         </div>
     </nav>
