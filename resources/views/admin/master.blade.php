@@ -92,7 +92,7 @@
                     <li class="menu-title">Menu</li>
 
                     <li>
-                        <a href="{{route('dashboard ')}}" class="waves-effect">
+                        <a href="{{route('dashboard')}}" class="waves-effect">
                             <i class="bx bx-home-circle"></i>
                             <span>Dashboards</span>
                         </a>
@@ -106,7 +106,7 @@
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
                             <li><a href="{{route('teacher.add')}}">Add Teacher</a></li>
-                            <li><a href="layouts-light-sidebar.html">Manage Teacher</a></li>
+                            <li><a href="{{route('teacher.manage')}}">Manage Teacher</a></li>
 
                         </ul>
                     </li>
@@ -117,8 +117,8 @@
                             <span>User Module</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="ecommerce-products.html">Add User</a></li>
-                            <li><a href="ecommerce-product-detail.html">Manage User</a></li>
+                            <li><a href="{{route('user.add')}}">Add User</a></li>
+                            <li><a href="{{route('user.manage')}}">Manage User</a></li>
                         </ul>
                     </li>
 

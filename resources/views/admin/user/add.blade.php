@@ -5,17 +5,9 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title mb-4">Add Teacher Form</h4>
-                    @if($message = Session::get('message'))
-                        <div class="alert alert-secondary alert-dismissible fade show" role="alert">
-                            {{$message}}
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                    @endif
-                    <form action="{{route('teacher.new')}}" method="POST" enctype="multipart/form-data">
-                        @csrf
+                    <h4 class="card-title mb-4">Add User Form</h4>
+
+                    <form>
                         <div class="form-group row mb-4">
                             <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Full name</label>
                             <div class="col-sm-9">

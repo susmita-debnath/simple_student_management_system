@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,5 +26,9 @@ Route::get('/login-registration', [HomeController::class, 'login'])->name('login
 Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/add-teacher', [TeacherController::class, 'add'])->name('teacher.add');
+    Route::post('/new-teacher', [TeacherController::class, 'create'])->name('teacher.new');
     Route::get('/manage-teacher', [TeacherController::class, 'manage'])->name('teacher.manage');
+
+    Route::get('/add-user', [UserController::class, 'add'])->name('user.add');
+    Route::get('/manage-user', [UserController::class, 'manage'])->name('user.manage');
 });
